@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMOKE</title>
+</head>
+<body>
+    <div class="main">
+       <ul class="middle">
+           <li>S</li>
+           <li>M</li>
+           <li>O</li>
+           <li>K</li>
+           <li>E</li>
+       </ul>
+    </div>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            min-height: 100vh;
+            background-color: black;
+        }
+        li{
+            color: rgb(167, 167, 167);
+            list-style: none;
+            position: relative;
+            font-size: 1.6rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 550;
+            
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            letter-spacing: 1.6rem;
+        }
+        ul:hover li{
+            animation: animate 3s forwards;
+        }
+        @keyframes  animate
+        {
+            0%{
+                transform: rotate(0deg) translateY(0px);
+                opacity: 1;
+                filter: blur(1px);
+            }
+            100%{
+                transform: rotate(45deg) translateY(-200px);
+                opacity: 0;
+                filter: blur(20px);
+            }
+        }
+        ul li:nth-child(1){
+            animation-delay: 0s;
+        }
+        ul li:nth-child(2){
+            animation-delay: .4s;
+        }
+        ul li:nth-child(3){
+            animation-delay: .8s;
+        }
+        ul li:nth-child(4){
+            animation-delay: 1.2s;
+        }
+        ul li:nth-child(5){
+            animation-delay: 1.6s;
+        }
+    </style>
+</body>
+</html>
